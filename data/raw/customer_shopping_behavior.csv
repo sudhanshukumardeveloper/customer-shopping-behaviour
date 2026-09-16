@@ -1,0 +1,501 @@
+customer_id,age,gender,item_purchased,category,purchase_amount,location,size,color,season,review_rating,subscription_status,shipping_type,discount_applied,previous_purchases,payment_method,frequency_of_purchases
+1,57,Male,Sweater,Outerwear,221.64,Florida,XL,White,Fall,3.3,No,Next Day,Yes,15,Credit Card,Weekly
+2,39,Male,Sweater,Outerwear,215.65,Washington,S,Yellow,Winter,2.3,No,Express,No,6,Bank Transfer,Monthly
+3,55,Male,Coat,Outerwear,277.36,California,M,Red,Winter,4.2,No,Free Shipping,No,4,Venmo,Fortnightly
+4,27,Female,Coat,Outerwear,189.79,Illinois,XL,Black,Summer,3.2,No,Standard,No,9,Cash,Weekly
+5,53,Male,Skirt,Clothing,179.61,Florida,M,Black,Spring,1.6,Yes,Express,Yes,10,Venmo,Monthly
+6,35,Male,Blouse,Clothing,133.53,Illinois,S,Blue,Summer,4.3,No,Free Shipping,No,12,Credit Card,Fortnightly
+7,18,Female,Sweater,Outerwear,31.08,Florida,XL,Red,Summer,3.8,Yes,Express,No,14,PayPal,Fortnightly
+8,48,Male,Shirt,Clothing,146.36,California,S,Green,Summer,3.9,Yes,Standard,No,8,Cash,Annually
+9,30,Male,Sunglasses,Accessories,221.58,Illinois,M,Blue,Spring,3.6,Yes,Next Day,No,6,Venmo,Fortnightly
+10,43,Male,Hoodie,Outerwear,277.81,New York,M,White,Spring,2.1,No,Next Day,Yes,4,PayPal,Monthly
+11,43,Female,Backpack,Accessories,20.25,New York,S,Green,Summer,,No,Next Day,Yes,10,Bank Transfer,Weekly
+12,38,Male,Sandals,Footwear,293.23,New York,L,Black,Summer,,No,Next Day,Yes,15,Bank Transfer,Monthly
+13,19,Male,Scarf,Accessories,56.37,Washington,S,White,Winter,4.6,No,Free Shipping,No,6,Bank Transfer,Weekly
+14,44,Female,Backpack,Accessories,176.24,Florida,XL,Black,Spring,4.0,No,Express,Yes,5,Credit Card,Annually
+15,58,Male,Sneakers,Footwear,112.27,Washington,L,Red,Fall,3.4,No,Express,No,13,Credit Card,Weekly
+16,66,Male,Sandals,Footwear,249.78,New York,L,Yellow,Fall,3.5,Yes,Standard,No,1,Cash,Fortnightly
+17,35,Female,Pants,Clothing,232.6,New York,M,Blue,Spring,1.9,No,Next Day,Yes,5,PayPal,Weekly
+18,45,Male,Coat,Outerwear,91.02,California,L,Blue,Fall,1.4,Yes,Express,No,6,Cash,Weekly
+19,59,Male,Scarf,Accessories,91.46,Illinois,XL,White,Spring,3.0,Yes,Free Shipping,No,13,Credit Card,Annually
+20,48,Male,Loafers,Footwear,285.52,Texas,L,Black,Spring,4.7,Yes,Free Shipping,No,13,Venmo,Monthly
+21,52,Male,Hat,Accessories,268.11,California,S,Black,Summer,3.2,No,Free Shipping,No,11,Venmo,Monthly
+22,41,Male,Scarf,Accessories,142.44,Illinois,L,Yellow,Spring,4.3,Yes,Next Day,No,6,Credit Card,Annually
+23,22,Male,Belt,Accessories,299.48,Texas,M,Blue,Fall,1.4,Yes,Next Day,No,3,Cash,Weekly
+24,33,Male,Skirt,Clothing,239.55,California,L,Blue,Winter,1.8,No,Next Day,No,11,Bank Transfer,Fortnightly
+25,70,Female,Blouse,Clothing,173.99,Washington,L,Green,Winter,2.7,Yes,Free Shipping,Yes,8,Cash,Monthly
+26,35,Female,Coat,Outerwear,194.09,Illinois,XL,White,Summer,,Yes,Next Day,No,11,Credit Card,Weekly
+27,37,Male,Sweater,Outerwear,175.8,Texas,M,White,Spring,2.6,No,Free Shipping,No,4,Venmo,Annually
+28,38,Male,Loafers,Footwear,154.49,California,S,Green,Spring,4.7,No,Express,No,7,Credit Card,Annually
+29,22,Male,Belt,Accessories,181.23,Texas,M,White,Spring,4.7,Yes,Standard,Yes,10,Credit Card,Monthly
+30,60,Male,Scarf,Accessories,28.57,Illinois,S,Green,Spring,1.4,No,Next Day,No,7,Bank Transfer,Fortnightly
+31,62,Male,Backpack,Accessories,173.8,Illinois,L,Green,Spring,1.4,Yes,Next Day,Yes,4,Credit Card,Annually
+32,58,Male,Sandals,Footwear,233.89,New York,S,Black,Fall,4.7,No,Standard,No,4,Credit Card,Monthly
+33,46,Female,Belt,Accessories,242.56,Florida,M,Red,Winter,2.0,Yes,Next Day,No,11,PayPal,Fortnightly
+34,50,Female,Sneakers,Footwear,194.83,California,M,Blue,Fall,4.5,No,Standard,No,4,Cash,Annually
+35,26,Female,Scarf,Accessories,134.29,New York,XL,White,Fall,3.4,No,Standard,Yes,3,Cash,Fortnightly
+36,64,Male,Jacket,Outerwear,213.72,Texas,L,Green,Winter,1.4,Yes,Next Day,No,15,Bank Transfer,Fortnightly
+37,62,Female,Blouse,Clothing,247.09,California,M,Black,Fall,4.4,No,Free Shipping,Yes,9,PayPal,Weekly
+38,69,Male,Blouse,Clothing,250.39,Texas,L,Red,Spring,2.7,Yes,Free Shipping,Yes,14,Venmo,Fortnightly
+39,56,Male,Shirt,Clothing,299.33,California,XL,Blue,Fall,1.3,No,Express,No,9,Bank Transfer,Annually
+40,66,Female,Blouse,Clothing,232.83,Washington,L,Red,Fall,3.5,Yes,Express,Yes,2,Credit Card,Fortnightly
+41,35,Male,Sneakers,Footwear,202.0,Florida,M,White,Spring,,No,Express,No,7,Cash,Fortnightly
+42,41,Female,Dress,Clothing,36.74,Illinois,S,Green,Spring,3.4,Yes,Free Shipping,Yes,5,Credit Card,Monthly
+43,55,Female,Skirt,Clothing,211.44,Texas,L,Black,Summer,3.8,No,Free Shipping,No,12,PayPal,Annually
+44,43,Male,Hat,Accessories,276.67,California,L,Blue,Summer,1.7,Yes,Express,Yes,9,Bank Transfer,Fortnightly
+45,52,Male,Sneakers,Footwear,215.73,Florida,L,Black,Spring,2.9,No,Free Shipping,No,8,Credit Card,Weekly
+46,42,Male,Skirt,Clothing,54.55,California,L,Yellow,Summer,4.3,Yes,Free Shipping,No,15,Credit Card,Monthly
+47,19,Male,Backpack,Accessories,143.56,California,M,Yellow,Winter,2.5,No,Express,Yes,12,PayPal,Annually
+48,67,Male,Belt,Accessories,205.73,Florida,M,Green,Spring,2.1,No,Free Shipping,No,1,Bank Transfer,Weekly
+49,21,Female,Jacket,Outerwear,129.65,Illinois,XL,Green,Spring,1.6,No,Express,Yes,2,PayPal,Annually
+50,45,Male,Jacket,Outerwear,196.09,Illinois,M,Red,Summer,2.7,No,Standard,No,6,Venmo,Fortnightly
+51,64,Female,Pants,Clothing,284.55,Washington,M,Red,Winter,,No,Next Day,Yes,6,Venmo,Annually
+52,50,Male,Dress,Clothing,228.9,Washington,XL,Blue,Fall,2.2,No,Free Shipping,No,13,Credit Card,Annually
+53,47,Female,Pants,Clothing,156.06,New York,M,White,Fall,3.1,No,Next Day,No,6,Cash,Fortnightly
+54,42,Male,Hoodie,Outerwear,98.98,New York,XL,Blue,Fall,3.3,No,Express,No,9,Venmo,Annually
+55,40,Male,Dress,Clothing,114.15,California,XL,Blue,Winter,3.4,No,Express,No,13,Cash,Monthly
+56,42,Male,Loafers,Footwear,293.93,Washington,L,Green,Winter,2.1,No,Free Shipping,Yes,9,Bank Transfer,Weekly
+57,51,Male,Sneakers,Footwear,80.98,Texas,L,White,Summer,3.8,Yes,Free Shipping,Yes,1,PayPal,Annually
+58,25,Female,Scarf,Accessories,288.58,California,M,Green,Fall,2.7,No,Standard,No,8,Bank Transfer,Fortnightly
+59,31,Male,Sandals,Footwear,58.19,Washington,L,Blue,Spring,3.7,Yes,Next Day,No,3,Cash,Fortnightly
+60,44,Female,Boots,Footwear,261.96,Florida,XL,Yellow,Fall,3.5,Yes,Next Day,No,11,Venmo,Fortnightly
+61,21,Male,Hat,Accessories,43.11,California,S,White,Fall,4.9,Yes,Free Shipping,No,3,Cash,Monthly
+62,32,Female,Jacket,Outerwear,278.33,New York,L,White,Winter,4.3,Yes,Standard,No,12,PayPal,Fortnightly
+63,61,Female,Coat,Outerwear,105.74,California,L,Black,Fall,1.5,No,Express,No,8,PayPal,Weekly
+64,66,Male,Hoodie,Outerwear,211.61,Washington,XL,Red,Spring,1.7,Yes,Next Day,Yes,9,Cash,Annually
+65,27,Male,Blouse,Clothing,179.94,Florida,M,White,Fall,4.3,No,Free Shipping,Yes,11,Bank Transfer,Monthly
+66,68,Female,Hoodie,Outerwear,210.29,Illinois,XL,White,Spring,2.2,No,Next Day,No,9,Venmo,Fortnightly
+67,54,Male,Skirt,Clothing,77.48,Washington,S,Red,Fall,4.0,No,Free Shipping,Yes,11,Cash,Annually
+68,19,Male,Sneakers,Footwear,73.19,New York,L,Yellow,Summer,4.0,No,Next Day,Yes,6,Bank Transfer,Weekly
+69,52,Female,Hoodie,Outerwear,172.5,Washington,M,White,Summer,1.4,Yes,Next Day,No,11,PayPal,Monthly
+70,68,Male,Backpack,Accessories,102.74,Florida,M,Yellow,Summer,2.4,No,Standard,Yes,9,PayPal,Fortnightly
+71,33,Female,Loafers,Footwear,83.73,Texas,L,Blue,Fall,4.6,No,Standard,Yes,13,Credit Card,Weekly
+72,30,Male,Belt,Accessories,237.11,New York,S,Yellow,Fall,,No,Express,Yes,15,Cash,Weekly
+73,27,Male,Loafers,Footwear,151.63,Illinois,M,Black,Summer,2.0,Yes,Free Shipping,No,2,Bank Transfer,Annually
+74,22,Female,Skirt,Clothing,47.38,California,S,Red,Winter,4.5,No,Next Day,No,9,Venmo,Monthly
+75,46,Male,Coat,Outerwear,81.39,Washington,M,Yellow,Summer,2.3,No,Express,Yes,13,PayPal,Weekly
+76,70,Male,Coat,Outerwear,213.36,Florida,L,Blue,Spring,,Yes,Free Shipping,No,13,PayPal,Weekly
+77,30,Female,Hoodie,Outerwear,80.55,California,S,Black,Fall,4.2,Yes,Free Shipping,Yes,10,Bank Transfer,Annually
+78,20,Male,Coat,Outerwear,229.63,Texas,L,Blue,Winter,3.4,Yes,Express,No,10,Venmo,Monthly
+79,66,Female,Backpack,Accessories,62.03,Texas,L,Black,Summer,1.6,No,Express,Yes,12,PayPal,Monthly
+80,53,Male,Scarf,Accessories,238.58,Texas,L,Green,Spring,2.7,No,Next Day,Yes,3,Venmo,Annually
+81,39,Male,Hoodie,Outerwear,136.53,New York,XL,White,Spring,,No,Free Shipping,Yes,5,PayPal,Fortnightly
+82,26,Male,Boots,Footwear,215.75,Florida,S,Black,Fall,3.8,Yes,Next Day,Yes,14,Cash,Annually
+83,47,Female,Backpack,Accessories,23.72,Florida,M,Red,Winter,3.3,No,Next Day,No,13,PayPal,Annually
+84,29,Female,Hat,Accessories,278.04,Illinois,L,Black,Spring,1.6,Yes,Next Day,Yes,6,PayPal,Weekly
+85,36,Male,Pants,Clothing,254.24,Illinois,S,Yellow,Summer,1.5,Yes,Free Shipping,No,6,Cash,Annually
+86,51,Female,Pants,Clothing,118.78,Illinois,XL,Red,Summer,1.0,Yes,Standard,No,9,Credit Card,Weekly
+87,46,Female,Sweater,Outerwear,109.34,Florida,XL,Black,Summer,3.6,Yes,Express,Yes,14,Bank Transfer,Weekly
+88,47,Female,Sandals,Footwear,20.96,Florida,L,Green,Spring,2.7,Yes,Next Day,Yes,13,Venmo,Weekly
+89,45,Male,Blouse,Clothing,235.47,Washington,S,White,Summer,1.9,Yes,Standard,Yes,10,Credit Card,Weekly
+90,49,Male,Scarf,Accessories,134.25,Illinois,L,Black,Spring,2.4,No,Express,No,9,Credit Card,Annually
+91,31,Male,Hoodie,Outerwear,263.43,California,L,Red,Fall,1.7,Yes,Free Shipping,Yes,8,Venmo,Annually
+92,42,Male,Boots,Footwear,273.0,New York,S,Green,Spring,3.1,No,Free Shipping,No,12,PayPal,Fortnightly
+93,60,Male,Sweater,Outerwear,211.14,Florida,M,White,Fall,1.5,No,Standard,No,12,Bank Transfer,Annually
+94,19,Male,Skirt,Clothing,250.82,California,S,Red,Fall,2.7,Yes,Express,Yes,15,PayPal,Monthly
+95,48,Female,Sneakers,Footwear,268.42,California,M,White,Fall,4.1,No,Standard,Yes,14,Credit Card,Monthly
+96,41,Female,Boots,Footwear,290.52,Washington,XL,Red,Summer,3.5,Yes,Next Day,Yes,14,Venmo,Weekly
+97,22,Male,Dress,Clothing,108.39,Washington,L,Black,Winter,3.0,Yes,Next Day,No,5,PayPal,Fortnightly
+98,45,Male,Backpack,Accessories,251.64,Florida,L,Red,Spring,2.4,No,Free Shipping,Yes,14,PayPal,Monthly
+99,20,Male,Dress,Clothing,258.18,California,M,Blue,Spring,2.0,No,Express,Yes,6,PayPal,Monthly
+100,63,Female,Boots,Footwear,35.14,Texas,L,Red,Summer,3.3,No,Free Shipping,No,11,Credit Card,Annually
+101,42,Female,Skirt,Clothing,45.44,Texas,L,White,Winter,2.5,No,Express,No,3,Credit Card,Annually
+102,23,Female,Belt,Accessories,64.17,Illinois,L,Red,Summer,4.1,No,Next Day,Yes,5,PayPal,Fortnightly
+103,27,Male,Sunglasses,Accessories,146.28,Washington,M,Black,Fall,2.7,No,Express,No,2,Cash,Annually
+104,56,Male,Pants,Clothing,28.93,California,XL,Black,Summer,4.0,Yes,Free Shipping,Yes,8,Bank Transfer,Fortnightly
+105,43,Male,Hoodie,Outerwear,56.63,Texas,XL,Black,Summer,4.7,No,Express,Yes,4,Cash,Annually
+106,54,Male,Pants,Clothing,136.28,Florida,M,White,Fall,2.6,No,Free Shipping,Yes,15,Bank Transfer,Weekly
+107,31,Male,Coat,Outerwear,45.0,Texas,L,Red,Fall,4.9,Yes,Next Day,Yes,12,Credit Card,Fortnightly
+108,42,Male,Sneakers,Footwear,270.07,Florida,S,White,Summer,1.9,Yes,Express,No,15,PayPal,Weekly
+109,42,Female,Scarf,Accessories,118.05,Texas,XL,Red,Fall,4.4,Yes,Next Day,No,14,PayPal,Weekly
+110,53,Female,Blouse,Clothing,141.03,New York,M,Yellow,Summer,4.9,Yes,Standard,No,14,Bank Transfer,Annually
+111,40,Female,Hat,Accessories,215.73,California,XL,Blue,Winter,2.1,No,Free Shipping,Yes,9,PayPal,Fortnightly
+112,66,Female,Pants,Clothing,103.48,Illinois,L,White,Spring,2.7,No,Next Day,No,1,PayPal,Fortnightly
+113,21,Female,Sneakers,Footwear,115.53,Texas,S,Red,Summer,1.9,Yes,Express,No,5,PayPal,Weekly
+114,64,Male,Loafers,Footwear,230.82,Florida,L,Blue,Winter,3.2,No,Free Shipping,Yes,15,Credit Card,Weekly
+115,30,Female,Hat,Accessories,38.09,Florida,XL,Red,Summer,1.9,Yes,Next Day,Yes,1,PayPal,Fortnightly
+116,40,Male,Dress,Clothing,162.49,Texas,M,Green,Summer,1.8,No,Standard,No,12,Cash,Weekly
+117,49,Male,Dress,Clothing,46.7,Florida,M,Red,Winter,4.3,No,Free Shipping,No,9,Credit Card,Monthly
+118,51,Female,Sweater,Outerwear,122.93,Washington,L,Green,Spring,4.7,No,Express,No,3,PayPal,Annually
+119,59,Male,Shirt,Clothing,42.94,Florida,S,Red,Fall,2.3,No,Standard,No,1,Venmo,Monthly
+120,61,Male,Shirt,Clothing,273.66,Washington,L,Yellow,Spring,2.9,Yes,Standard,No,1,Venmo,Weekly
+121,42,Male,Dress,Clothing,142.21,Texas,M,Yellow,Fall,2.8,No,Standard,No,7,Cash,Annually
+122,18,Male,Hoodie,Outerwear,141.13,California,XL,White,Fall,3.7,Yes,Free Shipping,Yes,8,Credit Card,Monthly
+123,28,Male,Jacket,Outerwear,137.72,Texas,XL,Yellow,Fall,4.5,No,Next Day,Yes,12,Venmo,Fortnightly
+124,27,Female,Loafers,Footwear,26.5,Illinois,L,Blue,Winter,2.5,Yes,Express,No,7,Credit Card,Monthly
+125,41,Male,Sneakers,Footwear,262.4,Illinois,S,Black,Summer,1.7,No,Free Shipping,Yes,4,Venmo,Fortnightly
+126,52,Female,Blouse,Clothing,242.79,New York,XL,Yellow,Spring,2.8,Yes,Standard,No,1,PayPal,Annually
+127,25,Male,Skirt,Clothing,206.29,Illinois,S,Yellow,Summer,3.3,Yes,Next Day,Yes,6,PayPal,Weekly
+128,52,Male,Skirt,Clothing,40.13,Washington,M,Red,Spring,2.1,No,Next Day,Yes,6,Venmo,Weekly
+129,64,Male,Hat,Accessories,139.53,Illinois,L,Red,Fall,4.6,Yes,Express,Yes,4,Cash,Fortnightly
+130,40,Female,Pants,Clothing,274.57,California,L,White,Spring,,Yes,Free Shipping,Yes,6,Bank Transfer,Monthly
+131,61,Male,Sweater,Outerwear,79.21,Texas,S,White,Winter,1.1,No,Standard,No,14,Cash,Monthly
+132,49,Male,Boots,Footwear,168.29,Florida,M,Blue,Spring,4.5,Yes,Standard,No,7,Bank Transfer,Monthly
+133,60,Female,Jacket,Outerwear,250.8,Illinois,L,White,Summer,1.9,Yes,Free Shipping,Yes,14,Cash,Annually
+134,38,Male,Jacket,Outerwear,167.07,Florida,M,Green,Fall,1.5,Yes,Next Day,No,14,Cash,Annually
+135,58,Male,Backpack,Accessories,56.57,New York,L,Red,Fall,1.5,No,Free Shipping,No,2,Cash,Fortnightly
+136,39,Female,Boots,Footwear,285.03,Florida,M,Black,Fall,2.2,No,Standard,No,15,Venmo,Fortnightly
+137,38,Female,Pants,Clothing,112.07,New York,L,Black,Fall,4.5,Yes,Express,No,8,Bank Transfer,Monthly
+138,31,Male,Hat,Accessories,274.96,California,XL,Yellow,Summer,3.6,Yes,Express,Yes,8,Credit Card,Fortnightly
+139,19,Male,Boots,Footwear,271.04,California,XL,White,Winter,1.3,Yes,Next Day,No,7,Cash,Annually
+140,56,Male,Pants,Clothing,95.21,Illinois,XL,White,Spring,4.0,Yes,Express,No,5,Venmo,Monthly
+141,28,Female,Sweater,Outerwear,148.91,Washington,XL,White,Summer,2.3,No,Standard,No,3,Credit Card,Weekly
+142,18,Female,Sandals,Footwear,67.63,New York,M,Yellow,Winter,5.0,No,Free Shipping,Yes,1,Bank Transfer,Monthly
+143,69,Male,Sneakers,Footwear,215.5,Texas,XL,Green,Fall,4.0,No,Express,No,7,Bank Transfer,Fortnightly
+144,55,Female,Belt,Accessories,247.28,Texas,S,Black,Winter,1.5,No,Standard,Yes,14,PayPal,Fortnightly
+145,70,Female,Loafers,Footwear,117.84,Florida,XL,Yellow,Winter,4.4,No,Express,Yes,2,PayPal,Weekly
+146,24,Male,Blouse,Clothing,216.87,Washington,M,Blue,Summer,1.7,No,Free Shipping,No,11,PayPal,Annually
+147,45,Female,Belt,Accessories,128.52,New York,XL,Red,Spring,4.6,No,Next Day,Yes,4,PayPal,Annually
+148,37,Female,Belt,Accessories,57.82,Washington,S,Black,Fall,3.5,No,Free Shipping,No,8,Venmo,Fortnightly
+149,52,Female,Backpack,Accessories,99.04,Illinois,L,Green,Summer,1.4,Yes,Express,No,3,PayPal,Fortnightly
+150,26,Male,Sandals,Footwear,104.01,Florida,L,Green,Summer,3.1,Yes,Next Day,No,11,Credit Card,Fortnightly
+151,58,Female,Loafers,Footwear,238.11,Illinois,XL,Red,Spring,4.6,Yes,Standard,Yes,3,Bank Transfer,Annually
+152,32,Male,Sunglasses,Accessories,146.43,Illinois,XL,Blue,Summer,2.2,No,Express,Yes,15,PayPal,Weekly
+153,43,Male,Jacket,Outerwear,64.76,Texas,XL,Blue,Summer,2.0,No,Express,No,7,Bank Transfer,Monthly
+154,29,Male,Hat,Accessories,249.85,New York,L,Green,Fall,1.7,Yes,Next Day,No,11,Venmo,Fortnightly
+155,21,Female,Coat,Outerwear,264.83,Illinois,L,White,Winter,4.7,Yes,Next Day,No,9,Bank Transfer,Annually
+156,23,Female,Hoodie,Outerwear,268.39,Texas,L,Green,Spring,4.7,Yes,Standard,Yes,1,Cash,Annually
+157,62,Male,Hoodie,Outerwear,71.01,Texas,L,Red,Fall,1.1,Yes,Next Day,No,5,Cash,Fortnightly
+158,22,Male,Sandals,Footwear,237.68,Texas,M,Green,Fall,4.1,Yes,Standard,No,15,Bank Transfer,Weekly
+159,51,Female,Skirt,Clothing,254.15,New York,M,Blue,Summer,1.1,No,Standard,Yes,1,Cash,Fortnightly
+160,35,Female,Boots,Footwear,140.61,New York,L,Blue,Fall,1.8,No,Standard,Yes,9,Cash,Weekly
+161,18,Male,Skirt,Clothing,222.14,Washington,L,Blue,Spring,1.8,Yes,Next Day,No,7,Credit Card,Weekly
+162,63,Male,Boots,Footwear,268.19,Illinois,S,White,Winter,5.0,Yes,Next Day,No,5,Credit Card,Annually
+163,54,Female,Coat,Outerwear,224.19,Texas,S,Red,Summer,3.2,No,Express,Yes,2,Cash,Annually
+164,62,Female,Dress,Clothing,61.09,Washington,L,Red,Summer,1.2,Yes,Express,No,5,Bank Transfer,Fortnightly
+165,38,Male,Sweater,Outerwear,167.92,New York,S,White,Summer,4.1,No,Express,No,3,PayPal,Annually
+166,58,Male,Boots,Footwear,27.6,Florida,M,Green,Spring,2.5,No,Express,Yes,13,PayPal,Weekly
+167,30,Male,Sweater,Outerwear,44.09,Florida,XL,Green,Fall,1.9,Yes,Express,Yes,13,Bank Transfer,Annually
+168,57,Male,Belt,Accessories,269.61,New York,L,Black,Winter,2.1,Yes,Free Shipping,Yes,4,Credit Card,Weekly
+169,44,Male,Sweater,Outerwear,140.71,Texas,S,Red,Fall,1.9,No,Standard,Yes,12,PayPal,Annually
+170,62,Male,Loafers,Footwear,40.09,New York,L,Yellow,Fall,1.2,No,Standard,No,8,Credit Card,Annually
+171,26,Female,Skirt,Clothing,127.43,California,XL,Red,Spring,4.8,No,Next Day,No,9,PayPal,Annually
+172,41,Female,Sandals,Footwear,89.35,Washington,M,Red,Spring,2.8,Yes,Standard,No,2,PayPal,Annually
+173,60,Male,Loafers,Footwear,87.53,Washington,M,Black,Fall,3.0,Yes,Next Day,Yes,12,PayPal,Monthly
+174,53,Female,Sneakers,Footwear,253.08,Washington,XL,Yellow,Spring,4.3,No,Standard,Yes,14,Venmo,Annually
+175,47,Male,Blouse,Clothing,80.68,Texas,S,Green,Summer,2.6,Yes,Express,No,3,Credit Card,Annually
+176,68,Female,Pants,Clothing,208.44,Washington,XL,Green,Summer,2.7,No,Standard,Yes,10,Venmo,Annually
+177,34,Female,Scarf,Accessories,212.91,California,L,White,Summer,3.6,Yes,Express,Yes,11,Venmo,Weekly
+178,63,Female,Sneakers,Footwear,199.15,Washington,L,Red,Fall,1.2,Yes,Free Shipping,No,3,Credit Card,Monthly
+179,52,Female,Backpack,Accessories,216.56,California,XL,Black,Spring,,No,Express,No,8,Venmo,Annually
+180,31,Male,Loafers,Footwear,133.19,Washington,M,Black,Winter,4.6,No,Next Day,Yes,6,Venmo,Weekly
+181,27,Female,Hat,Accessories,43.89,California,M,Blue,Spring,,No,Next Day,Yes,14,PayPal,Annually
+182,19,Female,Sweater,Outerwear,220.66,Washington,L,Yellow,Spring,2.7,Yes,Free Shipping,No,3,Cash,Fortnightly
+183,50,Male,Sunglasses,Accessories,42.24,Washington,XL,Green,Fall,,No,Standard,No,13,Venmo,Monthly
+184,61,Female,Sandals,Footwear,232.48,California,S,Green,Summer,1.4,No,Express,No,10,Bank Transfer,Monthly
+185,19,Female,Pants,Clothing,250.34,Washington,L,Blue,Summer,1.1,No,Express,Yes,1,Credit Card,Fortnightly
+186,38,Female,Sandals,Footwear,249.96,Florida,S,White,Spring,1.5,No,Express,Yes,15,Bank Transfer,Fortnightly
+187,36,Male,Dress,Clothing,107.56,Illinois,S,Blue,Spring,3.1,Yes,Free Shipping,No,7,Cash,Monthly
+188,22,Female,Hoodie,Outerwear,216.23,Texas,S,Red,Summer,3.6,Yes,Standard,No,3,Credit Card,Weekly
+189,55,Female,Boots,Footwear,256.85,Florida,M,Blue,Spring,4.0,Yes,Standard,No,6,Cash,Weekly
+190,24,Male,Sunglasses,Accessories,66.77,Illinois,M,Black,Summer,2.4,Yes,Express,No,7,Bank Transfer,Weekly
+191,67,Male,Belt,Accessories,254.9,California,M,Yellow,Summer,3.4,No,Standard,No,14,Venmo,Annually
+192,47,Female,Boots,Footwear,159.25,Illinois,L,Yellow,Winter,4.2,Yes,Standard,No,5,Bank Transfer,Annually
+193,24,Female,Loafers,Footwear,184.99,Washington,S,Green,Summer,1.2,Yes,Standard,No,6,Credit Card,Monthly
+194,61,Female,Boots,Footwear,134.55,California,S,White,Spring,3.8,No,Standard,No,5,Venmo,Fortnightly
+195,61,Female,Belt,Accessories,292.94,Texas,S,Green,Fall,2.9,No,Next Day,No,4,Venmo,Monthly
+196,22,Male,Blouse,Clothing,197.97,Florida,S,Yellow,Spring,1.5,Yes,Express,No,11,Bank Transfer,Fortnightly
+197,36,Male,Blouse,Clothing,123.48,Texas,M,Green,Summer,1.4,Yes,Next Day,No,3,PayPal,Monthly
+198,38,Male,Pants,Clothing,200.26,Washington,XL,Blue,Spring,3.1,Yes,Next Day,No,14,Cash,Fortnightly
+199,47,Female,Scarf,Accessories,69.26,Florida,M,Blue,Spring,1.2,No,Express,No,10,PayPal,Fortnightly
+200,42,Female,Shirt,Clothing,61.53,Illinois,XL,White,Summer,2.9,Yes,Express,No,9,Venmo,Weekly
+201,29,Female,Sweater,Outerwear,181.41,California,XL,Blue,Spring,1.3,Yes,Standard,Yes,9,PayPal,Annually
+202,55,Female,Skirt,Clothing,191.33,California,XL,Yellow,Winter,3.5,Yes,Express,Yes,10,Cash,Fortnightly
+203,70,Female,Sandals,Footwear,255.33,California,L,Red,Fall,1.8,No,Next Day,Yes,10,Bank Transfer,Weekly
+204,56,Male,Jacket,Outerwear,139.25,Texas,XL,Red,Fall,1.9,Yes,Free Shipping,Yes,11,Bank Transfer,Fortnightly
+205,44,Female,Jacket,Outerwear,265.14,California,XL,Blue,Winter,2.5,Yes,Express,Yes,15,Bank Transfer,Annually
+206,59,Female,Loafers,Footwear,189.11,Washington,S,Red,Summer,3.8,Yes,Free Shipping,Yes,6,Credit Card,Weekly
+207,30,Female,Loafers,Footwear,128.62,California,M,Black,Spring,4.4,Yes,Standard,No,11,Credit Card,Fortnightly
+208,33,Male,Sunglasses,Accessories,221.08,Texas,XL,Red,Winter,1.4,Yes,Express,Yes,8,PayPal,Fortnightly
+209,65,Female,Belt,Accessories,229.22,California,S,Black,Summer,1.9,No,Standard,Yes,1,Cash,Annually
+210,59,Male,Hoodie,Outerwear,95.98,Texas,L,Red,Winter,2.7,No,Free Shipping,No,12,Credit Card,Weekly
+211,27,Female,Shirt,Clothing,197.11,Illinois,S,Black,Fall,2.8,Yes,Express,Yes,11,Cash,Monthly
+212,56,Male,Sweater,Outerwear,108.83,Texas,M,Red,Summer,5.0,No,Standard,No,7,PayPal,Weekly
+213,44,Female,Belt,Accessories,268.76,Washington,XL,Green,Spring,5.0,Yes,Next Day,Yes,5,Credit Card,Monthly
+214,48,Female,Jacket,Outerwear,269.92,Texas,XL,Blue,Spring,1.5,No,Standard,Yes,15,Bank Transfer,Weekly
+215,27,Male,Sneakers,Footwear,269.25,California,L,Black,Winter,,No,Standard,Yes,12,Venmo,Weekly
+216,19,Male,Loafers,Footwear,271.48,New York,L,Black,Summer,,Yes,Free Shipping,Yes,4,Credit Card,Weekly
+217,25,Male,Sunglasses,Accessories,120.57,Florida,S,Yellow,Spring,3.5,Yes,Express,Yes,4,Cash,Weekly
+218,40,Female,Loafers,Footwear,20.23,California,L,Red,Spring,4.0,No,Next Day,Yes,4,Bank Transfer,Monthly
+219,38,Female,Coat,Outerwear,78.69,California,L,White,Spring,1.7,No,Express,No,14,Cash,Monthly
+220,68,Female,Pants,Clothing,61.33,New York,XL,Red,Fall,,No,Express,No,12,Credit Card,Weekly
+221,28,Female,Sandals,Footwear,48.96,Texas,L,Green,Winter,1.8,Yes,Next Day,Yes,6,PayPal,Annually
+222,52,Male,Coat,Outerwear,114.16,New York,XL,Green,Spring,3.8,Yes,Express,Yes,10,Credit Card,Monthly
+223,19,Male,Shirt,Clothing,130.63,Washington,L,Yellow,Fall,1.6,No,Free Shipping,No,11,Venmo,Annually
+224,53,Female,Skirt,Clothing,282.5,Texas,M,Blue,Spring,4.7,No,Next Day,Yes,12,PayPal,Annually
+225,21,Male,Sneakers,Footwear,100.89,California,S,Black,Winter,2.0,Yes,Express,Yes,10,Cash,Fortnightly
+226,59,Male,Hoodie,Outerwear,248.78,New York,M,Yellow,Summer,1.0,No,Express,Yes,5,PayPal,Weekly
+227,19,Female,Hat,Accessories,272.9,California,XL,Yellow,Spring,3.9,Yes,Standard,Yes,11,PayPal,Fortnightly
+228,56,Male,Hoodie,Outerwear,86.33,Washington,XL,Green,Spring,1.7,No,Standard,Yes,10,Venmo,Annually
+229,23,Female,Hoodie,Outerwear,51.56,Florida,XL,Yellow,Winter,,No,Express,No,4,Venmo,Annually
+230,40,Male,Belt,Accessories,210.0,Texas,M,Blue,Spring,2.0,No,Next Day,Yes,6,PayPal,Annually
+231,53,Male,Jacket,Outerwear,152.93,California,S,Black,Summer,,Yes,Free Shipping,Yes,8,Cash,Monthly
+232,43,Male,Hoodie,Outerwear,283.07,California,L,Black,Spring,1.5,No,Standard,No,1,Credit Card,Weekly
+233,31,Female,Sunglasses,Accessories,163.9,Florida,L,Red,Fall,1.4,Yes,Standard,No,7,Cash,Fortnightly
+234,64,Female,Jacket,Outerwear,81.35,Texas,M,Green,Spring,2.2,Yes,Express,Yes,8,Venmo,Weekly
+235,51,Female,Pants,Clothing,130.84,Texas,L,Red,Fall,3.2,No,Express,Yes,11,Bank Transfer,Fortnightly
+236,20,Female,Blouse,Clothing,41.05,California,L,Green,Fall,4.0,Yes,Next Day,Yes,14,Bank Transfer,Fortnightly
+237,20,Male,Coat,Outerwear,240.99,Texas,XL,Black,Spring,3.8,No,Standard,Yes,5,Credit Card,Monthly
+238,67,Female,Scarf,Accessories,180.55,Florida,XL,Green,Winter,4.1,No,Standard,No,8,Venmo,Annually
+239,27,Female,Shirt,Clothing,245.33,California,S,Green,Summer,,No,Next Day,Yes,12,Bank Transfer,Monthly
+240,23,Male,Shirt,Clothing,274.54,New York,XL,Yellow,Fall,3.5,Yes,Free Shipping,No,4,Cash,Annually
+241,47,Female,Belt,Accessories,244.97,New York,L,Green,Spring,1.4,No,Standard,No,3,PayPal,Fortnightly
+242,62,Male,Blouse,Clothing,216.47,Florida,L,Red,Winter,4.1,No,Free Shipping,Yes,9,Cash,Annually
+243,53,Female,Belt,Accessories,51.03,New York,M,Black,Winter,2.4,No,Standard,No,2,Credit Card,Fortnightly
+244,21,Male,Skirt,Clothing,239.33,California,L,White,Spring,2.0,No,Express,No,8,Cash,Monthly
+245,18,Female,Sweater,Outerwear,184.97,New York,M,Yellow,Summer,4.0,Yes,Express,No,14,Bank Transfer,Annually
+246,56,Female,Skirt,Clothing,21.99,Illinois,L,Blue,Fall,2.4,No,Express,Yes,9,PayPal,Annually
+247,21,Male,Sunglasses,Accessories,38.19,Washington,S,Red,Summer,2.7,Yes,Free Shipping,Yes,6,Bank Transfer,Monthly
+248,21,Male,Coat,Outerwear,258.08,Illinois,XL,Yellow,Spring,4.8,Yes,Express,Yes,5,Venmo,Monthly
+249,38,Female,Scarf,Accessories,36.76,Washington,M,Yellow,Spring,4.8,No,Free Shipping,Yes,8,Bank Transfer,Annually
+250,53,Male,Sandals,Footwear,227.73,Illinois,M,Green,Fall,4.3,No,Free Shipping,No,12,PayPal,Fortnightly
+251,64,Male,Belt,Accessories,182.39,Washington,S,Black,Summer,3.2,No,Standard,No,10,Credit Card,Annually
+252,33,Male,Backpack,Accessories,139.17,Florida,M,Blue,Winter,4.7,Yes,Standard,Yes,12,Credit Card,Annually
+253,60,Male,Hat,Accessories,152.86,Texas,XL,Black,Spring,4.8,No,Next Day,No,4,Credit Card,Monthly
+254,24,Female,Scarf,Accessories,47.64,Illinois,XL,Green,Spring,4.5,Yes,Standard,Yes,14,Cash,Fortnightly
+255,59,Male,Belt,Accessories,250.4,Florida,L,Yellow,Summer,2.2,Yes,Express,No,15,Credit Card,Monthly
+256,49,Male,Loafers,Footwear,105.41,New York,S,Green,Winter,3.9,Yes,Free Shipping,Yes,13,Bank Transfer,Fortnightly
+257,26,Male,Hat,Accessories,280.86,California,XL,Blue,Fall,1.5,Yes,Next Day,Yes,10,Venmo,Weekly
+258,57,Female,Backpack,Accessories,112.03,California,M,Blue,Fall,3.9,No,Standard,Yes,1,Credit Card,Weekly
+259,30,Female,Shirt,Clothing,243.35,California,L,Blue,Spring,2.8,Yes,Standard,No,1,PayPal,Fortnightly
+260,57,Female,Hat,Accessories,102.68,New York,M,White,Summer,4.8,No,Standard,Yes,10,Bank Transfer,Weekly
+261,24,Female,Blouse,Clothing,96.38,Illinois,M,Black,Spring,3.4,No,Next Day,No,8,PayPal,Weekly
+262,69,Male,Loafers,Footwear,245.68,Texas,M,Blue,Summer,2.4,Yes,Standard,Yes,5,Bank Transfer,Annually
+263,49,Female,Backpack,Accessories,293.42,California,XL,Blue,Fall,2.9,Yes,Free Shipping,No,11,Credit Card,Annually
+264,52,Male,Backpack,Accessories,123.2,Illinois,S,Yellow,Summer,2.8,No,Standard,Yes,3,Bank Transfer,Fortnightly
+265,60,Male,Sandals,Footwear,121.7,Florida,L,Blue,Winter,4.8,No,Free Shipping,No,7,Venmo,Annually
+266,35,Female,Hoodie,Outerwear,144.68,California,S,Green,Fall,,Yes,Express,No,1,Bank Transfer,Monthly
+267,41,Female,Sneakers,Footwear,260.23,New York,L,White,Winter,1.6,Yes,Express,No,3,Bank Transfer,Annually
+268,46,Male,Jacket,Outerwear,249.11,Texas,XL,Blue,Fall,4.2,Yes,Standard,No,2,Bank Transfer,Annually
+269,31,Female,Sneakers,Footwear,42.21,Washington,XL,Black,Winter,4.6,Yes,Free Shipping,No,7,PayPal,Weekly
+270,57,Male,Pants,Clothing,85.41,Illinois,M,Blue,Fall,1.7,Yes,Standard,Yes,5,Cash,Weekly
+271,41,Male,Jacket,Outerwear,127.45,Washington,S,Black,Summer,3.0,No,Free Shipping,No,2,Credit Card,Monthly
+272,62,Male,Boots,Footwear,292.75,Florida,XL,Green,Spring,2.5,Yes,Free Shipping,Yes,4,Credit Card,Fortnightly
+273,36,Female,Sweater,Outerwear,191.29,New York,L,Green,Winter,1.3,Yes,Free Shipping,Yes,7,PayPal,Monthly
+274,23,Male,Backpack,Accessories,144.45,Florida,L,White,Fall,1.6,No,Express,Yes,7,Credit Card,Monthly
+275,21,Female,Sneakers,Footwear,123.76,Florida,L,Green,Winter,3.2,No,Free Shipping,Yes,13,Cash,Annually
+276,30,Female,Sweater,Outerwear,136.02,California,L,White,Winter,2.4,Yes,Standard,No,14,Cash,Annually
+277,61,Female,Shirt,Clothing,73.08,Florida,S,Blue,Summer,1.7,Yes,Standard,Yes,6,Credit Card,Fortnightly
+278,50,Male,Jacket,Outerwear,113.12,Texas,L,Black,Spring,,No,Next Day,No,5,Venmo,Weekly
+279,42,Female,Skirt,Clothing,296.2,California,M,White,Winter,3.9,Yes,Next Day,Yes,9,Credit Card,Weekly
+280,67,Female,Hat,Accessories,204.58,New York,XL,Red,Summer,1.1,No,Express,Yes,1,Venmo,Annually
+281,31,Female,Backpack,Accessories,272.73,California,L,Yellow,Winter,1.6,No,Next Day,No,12,Venmo,Weekly
+282,46,Female,Hoodie,Outerwear,198.29,Texas,M,Yellow,Winter,3.2,Yes,Standard,No,12,Credit Card,Weekly
+283,68,Female,Belt,Accessories,243.26,Texas,M,Black,Winter,3.8,Yes,Free Shipping,No,8,Venmo,Annually
+284,46,Female,Sandals,Footwear,41.39,Florida,S,Red,Spring,,No,Standard,No,15,Bank Transfer,Weekly
+285,19,Female,Hat,Accessories,145.31,Washington,L,Green,Summer,1.0,Yes,Free Shipping,Yes,3,Credit Card,Fortnightly
+286,53,Female,Pants,Clothing,124.94,California,S,Black,Winter,1.9,No,Express,Yes,9,Cash,Annually
+287,46,Female,Hoodie,Outerwear,220.7,Washington,S,Black,Spring,4.4,Yes,Express,Yes,13,PayPal,Weekly
+288,37,Male,Shirt,Clothing,42.04,Washington,XL,Red,Summer,3.0,Yes,Free Shipping,No,2,Credit Card,Monthly
+289,70,Male,Sandals,Footwear,169.13,Florida,M,Green,Winter,1.6,Yes,Standard,Yes,7,PayPal,Monthly
+290,39,Female,Sunglasses,Accessories,135.29,Florida,XL,Blue,Winter,2.6,Yes,Standard,No,13,PayPal,Annually
+291,44,Female,Sweater,Outerwear,35.29,Texas,L,Red,Spring,4.1,Yes,Standard,Yes,5,Bank Transfer,Weekly
+292,64,Female,Jacket,Outerwear,291.95,Washington,M,Red,Spring,3.1,Yes,Standard,Yes,6,Bank Transfer,Fortnightly
+293,31,Male,Sweater,Outerwear,280.34,Florida,L,Black,Winter,1.2,No,Next Day,No,3,Venmo,Annually
+294,67,Male,Dress,Clothing,127.73,Florida,L,Green,Spring,4.4,No,Free Shipping,Yes,4,Cash,Fortnightly
+295,44,Male,Jacket,Outerwear,221.65,New York,M,Blue,Summer,4.0,No,Express,Yes,3,Venmo,Weekly
+296,68,Male,Sandals,Footwear,262.54,Illinois,XL,Blue,Summer,2.5,No,Next Day,No,2,Cash,Weekly
+297,38,Female,Hoodie,Outerwear,253.05,California,L,Red,Summer,3.2,No,Free Shipping,No,5,Venmo,Fortnightly
+298,35,Male,Coat,Outerwear,148.87,Washington,M,Yellow,Spring,3.5,Yes,Free Shipping,No,1,Cash,Fortnightly
+299,43,Female,Scarf,Accessories,205.82,California,S,Yellow,Winter,2.2,Yes,Express,No,1,PayPal,Annually
+300,32,Male,Sweater,Outerwear,230.03,Texas,S,Red,Fall,3.5,Yes,Next Day,Yes,11,Bank Transfer,Fortnightly
+301,40,Male,Pants,Clothing,163.7,Texas,L,Red,Summer,2.4,Yes,Next Day,No,3,Bank Transfer,Fortnightly
+302,68,Female,Dress,Clothing,74.52,Florida,L,Red,Spring,,Yes,Express,Yes,10,PayPal,Annually
+303,58,Female,Blouse,Clothing,143.77,Washington,L,Green,Spring,3.1,Yes,Free Shipping,No,10,Bank Transfer,Fortnightly
+304,70,Female,Sneakers,Footwear,100.93,Illinois,S,White,Summer,2.0,No,Standard,No,2,Venmo,Monthly
+305,59,Male,Loafers,Footwear,66.11,Texas,S,Black,Spring,1.2,Yes,Free Shipping,No,2,Cash,Annually
+306,50,Male,Scarf,Accessories,163.64,Texas,M,Blue,Spring,1.2,No,Standard,Yes,15,Bank Transfer,Weekly
+307,39,Male,Boots,Footwear,155.37,Florida,XL,Red,Spring,1.7,No,Next Day,No,9,Credit Card,Weekly
+308,65,Female,Backpack,Accessories,182.21,Illinois,L,Green,Spring,2.3,No,Express,Yes,9,Venmo,Fortnightly
+309,51,Male,Coat,Outerwear,236.53,Florida,S,White,Summer,2.1,Yes,Express,Yes,6,PayPal,Annually
+310,55,Male,Belt,Accessories,172.02,Washington,XL,Yellow,Winter,2.2,No,Express,No,15,Cash,Monthly
+311,22,Female,Pants,Clothing,244.74,California,XL,Black,Fall,1.3,No,Next Day,No,10,Bank Transfer,Weekly
+312,23,Male,Shirt,Clothing,118.99,California,XL,Black,Summer,3.0,No,Express,Yes,3,Credit Card,Monthly
+313,51,Female,Jacket,Outerwear,67.57,New York,L,Red,Spring,3.6,No,Standard,No,12,Venmo,Fortnightly
+314,67,Female,Backpack,Accessories,271.97,Illinois,XL,Blue,Fall,4.1,No,Free Shipping,No,13,Credit Card,Annually
+315,70,Female,Sunglasses,Accessories,160.41,New York,M,Yellow,Fall,4.2,No,Free Shipping,No,9,Venmo,Fortnightly
+316,19,Male,Jacket,Outerwear,122.87,Florida,L,White,Spring,2.3,Yes,Next Day,Yes,12,Venmo,Weekly
+317,54,Male,Hat,Accessories,268.9,Texas,S,White,Winter,2.8,Yes,Express,No,12,Cash,Fortnightly
+318,61,Male,Pants,Clothing,106.38,California,L,White,Spring,2.0,Yes,Next Day,No,11,Credit Card,Fortnightly
+319,28,Male,Hat,Accessories,58.0,Illinois,XL,Blue,Winter,4.2,No,Standard,Yes,2,PayPal,Monthly
+320,34,Female,Belt,Accessories,124.61,Florida,S,White,Summer,4.6,Yes,Free Shipping,Yes,10,Credit Card,Annually
+321,56,Male,Coat,Outerwear,206.64,Washington,L,White,Fall,2.8,Yes,Express,No,12,PayPal,Weekly
+322,57,Male,Dress,Clothing,231.77,California,M,Black,Summer,3.7,No,Express,Yes,3,PayPal,Monthly
+323,65,Male,Belt,Accessories,148.77,New York,XL,Blue,Fall,2.7,No,Free Shipping,No,15,PayPal,Weekly
+324,26,Female,Sandals,Footwear,66.1,New York,XL,Red,Spring,4.9,Yes,Free Shipping,No,12,Credit Card,Annually
+325,57,Female,Belt,Accessories,240.95,Florida,XL,Black,Winter,4.1,Yes,Next Day,No,13,Venmo,Annually
+326,35,Female,Sandals,Footwear,73.07,Illinois,S,Black,Summer,2.7,Yes,Free Shipping,No,1,Cash,Annually
+327,46,Female,Shirt,Clothing,76.23,Texas,M,Blue,Summer,3.5,Yes,Standard,No,6,Cash,Weekly
+328,20,Female,Loafers,Footwear,279.15,Washington,S,Black,Winter,1.5,Yes,Free Shipping,Yes,11,PayPal,Monthly
+329,46,Male,Skirt,Clothing,204.26,California,L,Red,Spring,2.9,Yes,Express,Yes,11,PayPal,Weekly
+330,26,Female,Belt,Accessories,41.35,Florida,S,White,Fall,4.2,Yes,Express,Yes,2,Cash,Annually
+331,61,Male,Shirt,Clothing,182.88,Florida,XL,Green,Fall,2.4,No,Express,No,3,Bank Transfer,Fortnightly
+332,25,Male,Sneakers,Footwear,136.86,Texas,L,White,Winter,4.0,Yes,Express,Yes,12,Bank Transfer,Monthly
+333,62,Female,Sneakers,Footwear,155.34,Washington,XL,White,Fall,1.4,Yes,Express,No,10,Bank Transfer,Monthly
+334,70,Male,Dress,Clothing,40.85,Texas,L,Blue,Summer,3.3,Yes,Free Shipping,Yes,5,Bank Transfer,Fortnightly
+335,27,Male,Dress,Clothing,283.44,California,S,Green,Spring,2.4,No,Next Day,No,15,PayPal,Fortnightly
+336,24,Male,Pants,Clothing,273.22,New York,M,Black,Summer,4.4,Yes,Next Day,Yes,1,Bank Transfer,Fortnightly
+337,43,Male,Boots,Footwear,70.47,Illinois,M,Black,Summer,2.9,No,Express,Yes,5,Venmo,Fortnightly
+338,63,Female,Scarf,Accessories,106.65,Texas,L,Black,Spring,2.1,No,Free Shipping,No,8,PayPal,Weekly
+339,67,Male,Dress,Clothing,23.59,California,M,Green,Winter,3.6,Yes,Standard,No,11,Credit Card,Annually
+340,58,Female,Coat,Outerwear,175.32,New York,XL,Blue,Winter,2.7,No,Standard,Yes,7,Credit Card,Weekly
+341,59,Male,Scarf,Accessories,259.13,Illinois,XL,Blue,Summer,1.2,Yes,Next Day,No,11,Cash,Weekly
+342,60,Male,Pants,Clothing,203.93,Washington,S,Yellow,Summer,4.2,No,Express,Yes,9,Bank Transfer,Monthly
+343,25,Female,Hoodie,Outerwear,216.87,California,M,Red,Winter,4.3,Yes,Free Shipping,No,13,PayPal,Annually
+344,64,Male,Coat,Outerwear,289.95,New York,L,Red,Spring,5.0,No,Express,No,7,Credit Card,Annually
+345,38,Male,Sweater,Outerwear,284.87,California,L,Blue,Winter,4.4,Yes,Next Day,Yes,9,Bank Transfer,Fortnightly
+346,28,Female,Pants,Clothing,53.46,Washington,S,Yellow,Fall,3.4,Yes,Free Shipping,No,12,Bank Transfer,Weekly
+347,44,Female,Sandals,Footwear,106.17,Washington,XL,Black,Winter,2.9,Yes,Standard,Yes,1,Credit Card,Annually
+348,63,Female,Coat,Outerwear,44.79,California,L,Green,Fall,1.1,No,Standard,No,2,Cash,Monthly
+349,58,Female,Sneakers,Footwear,176.2,Texas,S,Red,Fall,2.7,No,Express,No,4,Cash,Annually
+350,19,Male,Backpack,Accessories,204.0,New York,M,Yellow,Fall,1.9,Yes,Free Shipping,Yes,3,Credit Card,Annually
+351,40,Male,Sneakers,Footwear,168.44,Florida,L,Blue,Summer,4.4,No,Standard,Yes,6,Venmo,Weekly
+352,41,Male,Skirt,Clothing,73.65,Florida,S,Green,Summer,5.0,Yes,Standard,Yes,15,Venmo,Monthly
+353,58,Male,Boots,Footwear,133.01,New York,L,Red,Winter,2.4,No,Next Day,No,8,Venmo,Annually
+354,37,Male,Jacket,Outerwear,70.52,Texas,XL,Red,Fall,3.0,No,Free Shipping,Yes,15,Venmo,Annually
+355,40,Male,Pants,Clothing,243.27,California,XL,Red,Summer,1.6,No,Standard,No,15,Credit Card,Annually
+356,22,Female,Sweater,Outerwear,38.26,Illinois,S,Yellow,Spring,3.4,Yes,Next Day,No,3,PayPal,Annually
+357,32,Male,Jacket,Outerwear,128.48,New York,L,Yellow,Winter,2.6,Yes,Express,No,2,Bank Transfer,Weekly
+358,31,Male,Boots,Footwear,100.37,California,XL,Red,Summer,3.3,Yes,Express,Yes,6,Venmo,Weekly
+359,35,Male,Sneakers,Footwear,235.78,Florida,L,Yellow,Summer,2.5,Yes,Express,Yes,2,PayPal,Monthly
+360,63,Female,Hoodie,Outerwear,286.24,Washington,M,White,Fall,3.6,Yes,Standard,Yes,4,Bank Transfer,Weekly
+361,30,Male,Skirt,Clothing,68.51,Washington,M,Green,Winter,1.9,No,Standard,No,5,PayPal,Fortnightly
+362,53,Male,Sneakers,Footwear,228.55,New York,M,Yellow,Summer,1.1,No,Standard,No,8,Credit Card,Weekly
+363,48,Male,Skirt,Clothing,264.93,Washington,XL,Green,Summer,1.8,No,Express,No,11,Cash,Fortnightly
+364,33,Male,Sweater,Outerwear,241.27,Washington,S,Blue,Summer,1.7,No,Next Day,Yes,4,Venmo,Monthly
+365,20,Female,Sneakers,Footwear,162.84,Washington,XL,Red,Spring,4.8,Yes,Standard,No,15,PayPal,Weekly
+366,58,Female,Belt,Accessories,121.32,Illinois,S,Red,Winter,3.2,Yes,Express,Yes,13,PayPal,Annually
+367,21,Male,Blouse,Clothing,227.09,Illinois,XL,Yellow,Summer,1.3,No,Express,No,11,Bank Transfer,Annually
+368,37,Male,Loafers,Footwear,296.79,California,M,Green,Summer,1.6,No,Express,No,1,Credit Card,Monthly
+369,65,Male,Belt,Accessories,20.54,Florida,S,White,Spring,5.0,No,Free Shipping,Yes,3,Cash,Weekly
+370,26,Female,Pants,Clothing,260.72,Florida,XL,Yellow,Winter,3.5,Yes,Free Shipping,Yes,10,PayPal,Monthly
+371,68,Female,Sweater,Outerwear,181.5,Washington,M,Black,Spring,2.0,No,Next Day,Yes,1,PayPal,Weekly
+372,42,Male,Scarf,Accessories,260.26,Illinois,L,Black,Spring,1.5,Yes,Next Day,Yes,3,Venmo,Weekly
+373,41,Female,Hoodie,Outerwear,281.5,California,S,White,Spring,1.9,Yes,Standard,No,13,Cash,Monthly
+374,45,Male,Sunglasses,Accessories,99.6,California,XL,Red,Fall,,No,Standard,No,7,Credit Card,Fortnightly
+375,56,Male,Dress,Clothing,219.81,California,S,Green,Fall,3.9,No,Next Day,Yes,14,Venmo,Weekly
+376,27,Female,Shirt,Clothing,236.83,Illinois,L,White,Fall,1.1,No,Standard,No,6,Credit Card,Monthly
+377,50,Female,Backpack,Accessories,296.65,California,S,White,Summer,2.6,No,Standard,Yes,9,Venmo,Annually
+378,54,Female,Boots,Footwear,21.75,Florida,S,White,Winter,1.8,No,Free Shipping,Yes,2,Credit Card,Fortnightly
+379,42,Female,Hat,Accessories,292.17,California,M,Blue,Spring,5.0,No,Free Shipping,Yes,13,Cash,Annually
+380,49,Male,Scarf,Accessories,83.79,California,S,Green,Spring,1.5,No,Free Shipping,No,1,Credit Card,Fortnightly
+381,28,Male,Jacket,Outerwear,157.88,New York,M,Yellow,Spring,3.7,Yes,Standard,Yes,2,Venmo,Monthly
+382,54,Female,Hoodie,Outerwear,255.18,Illinois,S,Yellow,Summer,4.6,No,Next Day,No,6,Cash,Weekly
+383,20,Male,Backpack,Accessories,167.3,Illinois,L,Black,Summer,4.7,Yes,Standard,Yes,14,Bank Transfer,Weekly
+384,21,Male,Belt,Accessories,105.58,New York,S,Black,Spring,1.8,No,Next Day,No,7,Venmo,Annually
+385,51,Male,Belt,Accessories,144.87,Washington,S,Black,Spring,1.9,No,Standard,Yes,2,Credit Card,Fortnightly
+386,20,Female,Scarf,Accessories,46.1,Texas,S,Red,Spring,4.0,No,Standard,Yes,8,Venmo,Weekly
+387,20,Female,Sandals,Footwear,285.28,Washington,L,Green,Spring,4.6,No,Express,Yes,14,Venmo,Weekly
+388,25,Male,Scarf,Accessories,216.59,Florida,S,Yellow,Winter,1.1,No,Standard,Yes,9,Bank Transfer,Annually
+389,56,Male,Scarf,Accessories,230.05,Illinois,M,White,Winter,4.4,No,Next Day,No,15,Cash,Fortnightly
+390,61,Female,Belt,Accessories,259.42,Florida,M,Green,Winter,1.2,Yes,Express,No,8,Credit Card,Annually
+391,19,Male,Sunglasses,Accessories,108.52,Illinois,L,Red,Fall,1.6,No,Standard,Yes,3,Credit Card,Weekly
+392,26,Female,Sweater,Outerwear,38.88,California,S,Black,Fall,,No,Next Day,Yes,2,Cash,Fortnightly
+393,52,Male,Jacket,Outerwear,269.04,Illinois,XL,White,Winter,2.3,Yes,Express,Yes,9,PayPal,Weekly
+394,68,Male,Loafers,Footwear,92.37,Washington,M,Green,Fall,2.0,Yes,Next Day,No,7,PayPal,Weekly
+395,60,Male,Loafers,Footwear,234.26,California,L,Green,Fall,2.8,Yes,Free Shipping,Yes,3,Venmo,Weekly
+396,69,Female,Scarf,Accessories,266.19,Illinois,M,Green,Spring,2.3,No,Standard,No,5,Cash,Weekly
+397,35,Male,Sneakers,Footwear,219.8,Washington,S,Blue,Winter,2.4,No,Next Day,No,11,Venmo,Fortnightly
+398,44,Male,Skirt,Clothing,86.42,Texas,L,Red,Fall,2.5,Yes,Express,Yes,3,Cash,Fortnightly
+399,27,Male,Pants,Clothing,81.76,Texas,S,White,Fall,,No,Express,Yes,10,Bank Transfer,Weekly
+400,18,Female,Pants,Clothing,129.67,Washington,S,Green,Winter,1.3,No,Standard,No,4,PayPal,Monthly
+401,37,Female,Sweater,Outerwear,44.1,California,L,Yellow,Spring,2.6,Yes,Express,No,15,PayPal,Fortnightly
+402,32,Female,Shirt,Clothing,206.61,Washington,XL,Yellow,Winter,3.9,Yes,Free Shipping,Yes,2,Bank Transfer,Fortnightly
+403,51,Female,Blouse,Clothing,126.95,New York,M,White,Winter,4.5,Yes,Next Day,No,11,PayPal,Weekly
+404,66,Male,Scarf,Accessories,295.95,Florida,M,White,Winter,2.2,Yes,Standard,No,3,PayPal,Monthly
+405,65,Male,Skirt,Clothing,45.14,Illinois,S,White,Spring,2.6,No,Standard,No,1,Cash,Annually
+406,67,Male,Hat,Accessories,291.14,Florida,S,Yellow,Fall,1.6,No,Free Shipping,No,10,Bank Transfer,Monthly
+407,18,Male,Jacket,Outerwear,235.14,Illinois,S,White,Summer,3.5,Yes,Standard,Yes,7,Bank Transfer,Annually
+408,26,Female,Boots,Footwear,74.56,Illinois,M,White,Winter,4.3,Yes,Free Shipping,Yes,2,PayPal,Monthly
+409,19,Male,Shirt,Clothing,88.21,New York,L,White,Fall,1.7,No,Standard,No,11,PayPal,Annually
+410,61,Female,Scarf,Accessories,142.94,Illinois,XL,Blue,Fall,4.8,No,Next Day,No,1,Cash,Weekly
+411,48,Female,Hoodie,Outerwear,147.67,New York,M,Blue,Winter,3.5,No,Standard,No,6,PayPal,Fortnightly
+412,55,Female,Hat,Accessories,169.83,Illinois,L,Black,Summer,2.5,No,Free Shipping,No,6,Bank Transfer,Monthly
+413,49,Female,Sandals,Footwear,291.54,Texas,XL,Black,Spring,4.1,No,Standard,No,13,PayPal,Annually
+414,39,Male,Coat,Outerwear,116.68,Illinois,XL,Yellow,Spring,3.0,Yes,Express,Yes,3,Bank Transfer,Monthly
+415,33,Female,Loafers,Footwear,232.96,Florida,L,Blue,Spring,3.9,No,Next Day,Yes,15,Venmo,Weekly
+416,18,Female,Pants,Clothing,52.15,California,S,Red,Winter,1.9,No,Express,No,4,Cash,Annually
+417,22,Male,Boots,Footwear,41.92,New York,L,White,Spring,1.7,Yes,Standard,Yes,6,Credit Card,Weekly
+418,55,Male,Coat,Outerwear,203.62,California,XL,Green,Spring,4.4,Yes,Next Day,Yes,5,Venmo,Weekly
+419,51,Female,Dress,Clothing,293.67,New York,XL,Blue,Winter,2.0,No,Next Day,No,2,PayPal,Monthly
+420,33,Female,Blouse,Clothing,157.48,New York,M,Black,Summer,4.3,No,Standard,No,10,Credit Card,Annually
+421,18,Male,Skirt,Clothing,290.54,Washington,M,Black,Fall,3.3,No,Express,Yes,13,Bank Transfer,Monthly
+422,54,Male,Boots,Footwear,287.26,Texas,L,White,Spring,2.1,Yes,Free Shipping,Yes,13,Venmo,Monthly
+423,43,Male,Hat,Accessories,253.48,Illinois,S,White,Winter,4.3,Yes,Express,No,8,Cash,Weekly
+424,23,Male,Blouse,Clothing,82.45,Texas,S,Yellow,Spring,4.1,No,Next Day,No,6,Venmo,Weekly
+425,48,Male,Boots,Footwear,205.9,New York,M,Green,Winter,4.9,Yes,Free Shipping,Yes,2,Venmo,Fortnightly
+426,59,Male,Sweater,Outerwear,148.66,Florida,S,Black,Fall,1.4,No,Express,Yes,10,Cash,Weekly
+427,50,Male,Sandals,Footwear,108.23,Texas,S,Green,Fall,1.9,Yes,Express,No,14,Cash,Annually
+428,43,Male,Belt,Accessories,30.89,Washington,M,Yellow,Summer,1.8,No,Standard,No,6,Cash,Monthly
+429,45,Female,Backpack,Accessories,211.25,California,L,Red,Fall,2.8,No,Standard,No,8,Cash,Annually
+430,20,Male,Backpack,Accessories,161.79,California,XL,Red,Spring,1.8,Yes,Standard,Yes,10,Cash,Fortnightly
+431,69,Male,Boots,Footwear,82.92,California,S,Blue,Winter,3.8,No,Next Day,Yes,14,Bank Transfer,Annually
+432,25,Male,Sandals,Footwear,165.92,California,M,Red,Winter,4.8,No,Free Shipping,No,14,Venmo,Weekly
+433,42,Female,Coat,Outerwear,137.94,Florida,XL,Blue,Spring,2.0,Yes,Next Day,No,2,Credit Card,Fortnightly
+434,29,Female,Sunglasses,Accessories,245.73,Washington,M,Black,Spring,3.7,No,Next Day,No,6,Cash,Fortnightly
+435,69,Female,Loafers,Footwear,162.98,Florida,L,Red,Winter,3.6,Yes,Express,Yes,6,Bank Transfer,Fortnightly
+436,67,Female,Hoodie,Outerwear,148.65,Illinois,M,Yellow,Winter,2.3,Yes,Standard,Yes,10,Bank Transfer,Annually
+437,43,Male,Sneakers,Footwear,257.06,Florida,M,Black,Fall,2.6,No,Standard,No,3,Cash,Annually
+438,24,Male,Loafers,Footwear,290.49,Washington,M,White,Fall,4.0,Yes,Free Shipping,Yes,2,PayPal,Annually
+439,45,Male,Shirt,Clothing,226.17,Illinois,M,Red,Summer,4.8,No,Next Day,No,5,Venmo,Monthly
+440,34,Female,Skirt,Clothing,188.85,Illinois,M,Black,Winter,2.0,No,Express,Yes,1,Venmo,Weekly
+441,55,Male,Sandals,Footwear,37.71,Florida,M,Green,Winter,2.5,Yes,Standard,No,13,Bank Transfer,Weekly
+442,32,Female,Loafers,Footwear,114.72,New York,XL,White,Winter,4.2,Yes,Express,No,12,Venmo,Fortnightly
+443,46,Male,Sandals,Footwear,160.91,New York,XL,Green,Summer,4.2,No,Free Shipping,Yes,7,PayPal,Fortnightly
+444,65,Male,Sneakers,Footwear,92.11,Washington,S,White,Fall,2.3,No,Free Shipping,Yes,14,Credit Card,Annually
+445,41,Male,Sweater,Outerwear,279.31,Illinois,XL,Green,Summer,3.3,No,Express,Yes,3,Bank Transfer,Annually
+446,60,Male,Blouse,Clothing,50.81,Florida,XL,Yellow,Spring,3.6,No,Next Day,Yes,5,Bank Transfer,Weekly
+447,68,Female,Belt,Accessories,198.08,California,S,Green,Summer,3.8,Yes,Express,Yes,14,Venmo,Fortnightly
+448,45,Male,Scarf,Accessories,178.43,New York,S,Yellow,Winter,2.3,Yes,Express,No,11,Credit Card,Monthly
+449,51,Female,Sandals,Footwear,260.38,California,XL,Black,Winter,2.8,No,Standard,Yes,7,Cash,Weekly
+450,69,Male,Sandals,Footwear,43.47,Florida,S,Black,Spring,1.7,No,Free Shipping,No,14,PayPal,Weekly
+451,70,Male,Loafers,Footwear,203.69,Florida,M,Yellow,Winter,2.0,Yes,Free Shipping,Yes,8,Credit Card,Monthly
+452,58,Female,Sneakers,Footwear,21.44,Florida,S,Blue,Fall,4.3,Yes,Next Day,No,2,Credit Card,Weekly
+453,28,Female,Backpack,Accessories,219.32,Illinois,M,Green,Spring,2.4,Yes,Next Day,Yes,15,PayPal,Weekly
+454,36,Female,Coat,Outerwear,58.59,Florida,M,Blue,Spring,3.4,No,Next Day,No,9,PayPal,Weekly
+455,66,Female,Dress,Clothing,182.74,New York,S,Red,Winter,4.0,Yes,Express,Yes,2,Venmo,Monthly
+456,68,Female,Sunglasses,Accessories,23.52,California,M,Black,Summer,3.8,Yes,Free Shipping,Yes,14,Venmo,Weekly
+457,26,Male,Sneakers,Footwear,262.52,Washington,L,Black,Winter,4.9,Yes,Standard,No,1,Venmo,Weekly
+458,22,Female,Jacket,Outerwear,93.88,New York,M,Black,Summer,4.4,Yes,Free Shipping,Yes,7,Credit Card,Weekly
+459,58,Female,Skirt,Clothing,244.8,California,L,Black,Winter,3.2,No,Free Shipping,No,14,Credit Card,Annually
+460,47,Female,Sandals,Footwear,263.78,California,L,Red,Winter,2.3,No,Standard,No,2,Credit Card,Weekly
+461,32,Female,Belt,Accessories,179.07,Illinois,M,Red,Summer,2.7,Yes,Express,No,4,Credit Card,Fortnightly
+462,33,Male,Pants,Clothing,188.18,New York,M,Black,Winter,4.2,Yes,Next Day,No,7,PayPal,Weekly
+463,24,Male,Blouse,Clothing,88.73,California,S,Red,Fall,4.2,Yes,Next Day,No,4,Cash,Weekly
+464,52,Male,Coat,Outerwear,195.06,New York,S,White,Spring,4.4,Yes,Free Shipping,Yes,12,PayPal,Monthly
+465,33,Male,Pants,Clothing,273.52,Illinois,M,Yellow,Winter,2.9,Yes,Free Shipping,No,11,PayPal,Monthly
+466,54,Male,Pants,Clothing,180.92,Washington,S,Black,Winter,1.2,No,Express,Yes,2,Bank Transfer,Weekly
+467,18,Female,Backpack,Accessories,259.05,New York,XL,Red,Fall,1.7,No,Standard,Yes,9,Cash,Fortnightly
+468,56,Female,Sunglasses,Accessories,255.74,Texas,XL,White,Summer,4.2,No,Free Shipping,Yes,8,Credit Card,Weekly
+469,47,Female,Sandals,Footwear,133.07,Washington,L,Blue,Winter,3.0,No,Free Shipping,No,1,PayPal,Weekly
+470,25,Male,Coat,Outerwear,236.26,Illinois,XL,White,Fall,3.2,Yes,Free Shipping,Yes,11,Venmo,Weekly
+471,56,Male,Blouse,Clothing,152.56,New York,XL,Green,Summer,3.8,Yes,Express,No,14,PayPal,Monthly
+472,32,Male,Loafers,Footwear,245.49,Texas,XL,Black,Fall,3.3,No,Express,No,3,PayPal,Annually
+473,32,Male,Loafers,Footwear,111.52,California,XL,White,Fall,2.1,Yes,Standard,Yes,15,Cash,Annually
+474,68,Female,Belt,Accessories,199.23,New York,S,White,Winter,3.2,No,Next Day,No,14,Cash,Fortnightly
+475,31,Female,Coat,Outerwear,196.19,Washington,M,Blue,Winter,3.8,Yes,Free Shipping,No,5,Bank Transfer,Fortnightly
+476,36,Male,Sandals,Footwear,54.74,Illinois,XL,Yellow,Winter,4.8,Yes,Next Day,No,13,Bank Transfer,Fortnightly
+477,39,Male,Sandals,Footwear,190.88,Illinois,M,Blue,Spring,3.5,No,Next Day,Yes,15,Bank Transfer,Annually
+478,57,Male,Jacket,Outerwear,57.47,California,M,Blue,Summer,1.2,Yes,Standard,No,7,Venmo,Fortnightly
+479,27,Male,Loafers,Footwear,297.56,Texas,M,Green,Winter,2.2,Yes,Free Shipping,Yes,11,Bank Transfer,Annually
+480,40,Male,Jacket,Outerwear,287.23,Florida,S,Green,Winter,3.0,No,Standard,No,3,PayPal,Fortnightly
+481,40,Female,Boots,Footwear,94.58,California,XL,White,Summer,2.4,Yes,Standard,No,1,Credit Card,Weekly
+482,48,Male,Hat,Accessories,180.26,New York,XL,Black,Summer,2.3,No,Express,No,2,Cash,Annually
+483,30,Female,Sunglasses,Accessories,122.56,California,M,Yellow,Spring,1.0,Yes,Free Shipping,Yes,15,Bank Transfer,Fortnightly
+484,44,Female,Jacket,Outerwear,258.89,Florida,M,Black,Winter,1.1,Yes,Standard,Yes,1,Cash,Annually
+485,51,Male,Jacket,Outerwear,144.36,New York,S,Green,Summer,4.9,No,Express,No,10,PayPal,Monthly
+486,49,Male,Hoodie,Outerwear,196.93,Florida,S,Yellow,Summer,3.4,No,Standard,Yes,8,Bank Transfer,Weekly
+487,68,Female,Sweater,Outerwear,41.15,Texas,L,Yellow,Summer,1.3,No,Next Day,Yes,15,Cash,Annually
+488,19,Male,Boots,Footwear,36.42,Illinois,L,Yellow,Winter,4.6,Yes,Express,No,12,Credit Card,Weekly
+489,67,Male,Blouse,Clothing,161.66,Illinois,XL,Green,Spring,1.6,No,Express,No,13,Credit Card,Fortnightly
+490,63,Male,Sneakers,Footwear,146.02,Washington,S,Green,Summer,2.2,Yes,Standard,Yes,5,Bank Transfer,Fortnightly
+491,36,Female,Sandals,Footwear,88.76,Florida,M,Blue,Fall,,Yes,Next Day,Yes,7,Cash,Fortnightly
+492,40,Male,Shirt,Clothing,110.3,Illinois,XL,Black,Fall,2.6,Yes,Standard,No,14,Bank Transfer,Annually
+493,33,Male,Skirt,Clothing,202.05,Florida,M,Black,Winter,4.9,Yes,Next Day,No,8,Venmo,Weekly
+494,21,Female,Scarf,Accessories,178.12,Texas,M,Red,Winter,1.8,No,Free Shipping,No,12,Bank Transfer,Annually
+495,52,Female,Loafers,Footwear,220.26,Washington,S,Blue,Summer,1.2,No,Free Shipping,Yes,6,Venmo,Weekly
+496,45,Male,Shirt,Clothing,161.43,New York,M,Blue,Spring,1.7,Yes,Express,No,9,PayPal,Fortnightly
+497,63,Male,Shirt,Clothing,267.03,Washington,XL,White,Winter,3.7,Yes,Express,Yes,2,Bank Transfer,Annually
+498,59,Female,Pants,Clothing,162.64,Florida,XL,Blue,Fall,2.7,Yes,Express,No,9,PayPal,Monthly
+499,19,Male,Dress,Clothing,41.43,Florida,M,Red,Winter,1.0,Yes,Express,Yes,7,Bank Transfer,Monthly
+500,47,Male,Shirt,Clothing,192.24,Texas,L,Red,Summer,1.2,No,Express,Yes,10,Cash,Fortnightly

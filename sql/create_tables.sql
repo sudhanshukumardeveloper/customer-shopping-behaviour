@@ -2,17 +2,17 @@
 -- create_tables.sql
 -- Customer Shopping Behavior Database — DDL
 -- =============================================================================
--- Run this script ONCE to create the schema before loading data.
--- The ingest_to_postgres.py script handles the actual data load via pandas
--- to_sql; this script is provided for documentation, manual setup, and
--- re-creation scenarios.
+-- Run once before ingestion. The Python loader preserves this schema by using
+-- TRUNCATE + INSERT rather than replacing the table.
 -- =============================================================================
 
--- Drop if re-running from scratch
+DROP VIEW IF EXISTS v_items;
+DROP VIEW IF EXISTS v_categories;
 DROP TABLE IF EXISTS customer;
 
--- ── Main table ────────────────────────────────────────────────────────────────
 CREATE TABLE customer (
+    customer_id             INTEGER         PRIMARY KEY,
+
     -- Demographics
     age                     SMALLINT        NOT NULL CHECK (age BETWEEN 18 AND 120),
     gender                  TEXT            NOT NULL,
@@ -44,27 +44,16 @@ CREATE TABLE customer (
     purchase_frequency_days SMALLINT        CHECK (purchase_frequency_days > 0)
 );
 
--- ── Indexes for common query patterns ────────────────────────────────────────
--- These speed up the GROUP BY, WHERE, and JOIN patterns used in the analysis
--- and business queries.
-
--- Frequently filtered / grouped columns
-CREATE INDEX idx_customer_gender           ON customer (gender);
-CREATE INDEX idx_customer_category         ON customer (category);
-CREATE INDEX idx_customer_subscription     ON customer (subscription_status);
-CREATE INDEX idx_customer_discount         ON customer (discount_applied);
-CREATE INDEX idx_customer_shipping_type    ON customer (shipping_type);
-CREATE INDEX idx_customer_age_group        ON customer (age_group);
-CREATE INDEX idx_customer_item_purchased   ON customer (item_purchased);
-
--- Range/aggregate columns
-CREATE INDEX idx_customer_purchase_amount  ON customer (purchase_amount);
-CREATE INDEX idx_customer_review_rating    ON customer (review_rating);
-CREATE INDEX idx_customer_prev_purchases   ON customer (previous_purchases);
-
--- ── Optional: enumeration / lookup views ─────────────────────────────────────
--- Handy reference views — no separate lookup tables needed given the small
--- cardinality of each categorical column.
+CREATE INDEX idx_customer_gender          ON customer (gender);
+CREATE INDEX idx_customer_category        ON customer (category);
+CREATE INDEX idx_customer_subscription    ON customer (subscription_status);
+CREATE INDEX idx_customer_discount        ON customer (discount_applied);
+CREATE INDEX idx_customer_shipping_type   ON customer (shipping_type);
+CREATE INDEX idx_customer_age_group       ON customer (age_group);
+CREATE INDEX idx_customer_item_purchased  ON customer (item_purchased);
+CREATE INDEX idx_customer_purchase_amount ON customer (purchase_amount);
+CREATE INDEX idx_customer_review_rating   ON customer (review_rating);
+CREATE INDEX idx_customer_prev_purchases  ON customer (previous_purchases);
 
 CREATE OR REPLACE VIEW v_categories AS
     SELECT DISTINCT category FROM customer ORDER BY 1;

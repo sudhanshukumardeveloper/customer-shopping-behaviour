@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Customer Shopping Behavior — Dashboard</title>
+<style>
+  :root{
+    --navy:#1A2235;
+    --navy-2:#212B44;
+    --navy-3:#283354;
+    --blue:#3B82D4;
+    --purple:#7C5CD8;
+    --teal:#22C5A6;
+    --amber:#E8A33D;
+    --text-hi:#F3F5FA;
+    --text-mid:#AEB6C9;
+    --text-low:#7E88A0;
+    --border:#33405E;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--navy);
+    font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+    color:var(--text-hi);
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  .wrap{max-width:1400px;margin:0 auto;padding:20px 20px 40px;}
+
+  .header{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 22px;background:linear-gradient(90deg,var(--navy-2),var(--navy-3));
+    border-radius:12px;border:1px solid var(--border);margin-bottom:16px;
+    flex-wrap:wrap;gap:10px;
+  }
+  .header h1{font-size:20px;font-weight:600;margin:0;color:var(--text-hi);}
+  .header p{margin:2px 0 0;font-size:12.5px;color:var(--text-mid);}
+  .header a{color:var(--blue);text-decoration:none;font-size:12px;}
+  .header a:hover{text-decoration:underline;}
+
+  .slicer-row{
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+    padding:12px 16px;background:var(--navy-2);border:1px solid var(--border);
+    border-radius:10px;margin-bottom:16px;
+  }
+  .slicer-label{font-size:11px;color:var(--text-low);text-transform:uppercase;letter-spacing:.04em;margin-right:4px;}
+  .chip{
+    padding:6px 14px;border-radius:999px;border:1px solid var(--border);
+    background:var(--navy-3);color:var(--text-mid);font-size:12.5px;cursor:pointer;
+    transition:all .15s ease;user-select:none;
+  }
+  .chip:hover{border-color:var(--blue);color:var(--text-hi);}
+  .chip.active{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600;}
+
+  .kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:16px;}
+  .kpi{
+    background:var(--navy-2);border:1px solid var(--border);border-radius:12px;
+    padding:16px 18px;position:relative;overflow:hidden;
+  }
+  .kpi::before{
+    content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--kpi-accent,var(--blue));
+  }
+  .kpi .label{font-size:11.5px;color:var(--text-low);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;}
+  .kpi .value{font-size:26px;font-weight:700;color:var(--text-hi);}
+  .kpi .sub{font-size:11.5px;color:var(--text-mid);margin-top:4px;}
+
+  .grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:14px;margin-bottom:14px;}
+  .grid.two{grid-template-columns:1fr 1fr;}
+  .card{
+    background:var(--navy-2);border:1px solid var(--border);border-radius:12px;
+    padding:16px 18px;min-width:0;
+  }
+  .card h3{margin:0 0 3px;font-size:13.5px;font-weight:600;color:var(--text-hi);}
+  .card .cap{font-size:11px;color:var(--text-low);margin-bottom:10px;}
+  .chart-wrap{position:relative;width:100%;}
+
+  .legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;font-size:11px;color:var(--text-mid);}
+  .legend span{display:inline-flex;align-items:center;gap:5px;}
+  .dot{width:9px;height:9px;border-radius:2px;display:inline-block;}
+
+  .prod-list{list-style:none;margin:0;padding:0;}
+  .prod-list li{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:7px 0;border-bottom:1px solid var(--border);font-size:12.5px;
+  }
+  .prod-list li:last-child{border-bottom:none;}
+  .prod-rank{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:18px;height:18px;border-radius:5px;background:var(--navy-3);
+    color:var(--text-mid);font-size:10.5px;font-weight:700;margin-right:8px;
+  }
+  .prod-name{color:var(--text-hi);flex:1;}
+  .prod-val{color:var(--blue);font-weight:600;}
+
+  .insight{
+    margin-top:10px;padding:8px 10px;background:rgba(59,130,212,0.08);
+    border-left:2px solid var(--blue);border-radius:0 6px 6px 0;
+    font-size:11.5px;color:var(--text-mid);line-height:1.5;
+  }
+
+  footer{
+    text-align:center;font-size:11px;color:var(--text-low);
+    margin-top:20px;padding-top:14px;border-top:1px solid var(--border);
+  }
+
+  @media (max-width:900px){
+    .kpi-row{grid-template-columns:repeat(2,1fr);}
+    .grid{grid-template-columns:1fr;}
+    .grid.two{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <div>
+      <h1>Customer Shopping Behavior</h1>
+      <p>Retail analytics dashboard &middot; 500 customers &middot; synthetic transaction data</p>
+    </div>
+    <a href="https://github.com/sudhanshukumardeveloper/customer-shopping-behaviour" target="_blank" rel="noopener">View source repository ↗</a>
+  </div>
+
+  <div class="slicer-row">
+    <span class="slicer-label">Category</span>
+    <span class="chip active" data-cat="Accessories">Accessories</span>
+    <span class="chip" data-cat="Clothing">Clothing</span>
+    <span class="chip" data-cat="Footwear">Footwear</span>
+    <span class="chip" data-cat="Outerwear">Outerwear</span>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi" style="--kpi-accent:var(--blue)">
+      <div class="label">Total revenue</div>
+      <div class="value">$83,676.81</div>
+      <div class="sub">500 orders across 4 categories</div>
+    </div>
+    <div class="kpi" style="--kpi-accent:var(--teal)">
+      <div class="label">Total customers</div>
+      <div class="value">500</div>
+      <div class="sub">245 subscribers &middot; 255 non-subscribers</div>
+    </div>
+    <div class="kpi" style="--kpi-accent:var(--purple)">
+      <div class="label">Avg purchase amount</div>
+      <div class="value">$167.35</div>
+      <div class="sub">Range: $20.23 &ndash; $299.48</div>
+    </div>
+    <div class="kpi" style="--kpi-accent:var(--amber)">
+      <div class="label">Avg review rating</div>
+      <div class="value">2.93 <span style="font-size:14px;color:var(--text-mid);">/ 5.0</span></div>
+      <div class="sub">Top product: Blouse (3.23)</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Subscription split</h3>
+      <div class="cap">Share of customers by subscription status</div>
+      <div class="chart-wrap" style="height:190px;">
+        <canvas id="donutChart" role="img" aria-label="Donut chart: 49% subscribers, 51% non-subscribers"></canvas>
+      </div>
+      <div class="legend" id="donutLegend"></div>
+    </div>
+
+    <div class="card">
+      <h3>Revenue by gender</h3>
+      <div class="cap">Total revenue and order count</div>
+      <div class="chart-wrap" style="height:190px;">
+        <canvas id="genderChart" role="img" aria-label="Bar chart comparing revenue by gender: Male 47238.52, Female 36438.29"></canvas>
+      </div>
+      <div class="insight">Male customers generate 29.6% more revenue, driven by order volume (277 vs 223) rather than higher per-order spend.</div>
+    </div>
+
+    <div class="card">
+      <h3>Shipping type spend</h3>
+      <div class="cap">Standard vs Express</div>
+      <div class="chart-wrap" style="height:190px;">
+        <canvas id="shippingChart" role="img" aria-label="Bar chart comparing average spend for Standard and Express shipping"></canvas>
+      </div>
+      <div class="insight">Standard shipping customers spend $8.20 more per order on average than Express customers.</div>
+    </div>
+  </div>
+
+  <div class="grid two">
+    <div class="card">
+      <h3>Revenue by age group</h3>
+      <div class="cap">Column chart &middot; 5 age brackets</div>
+      <div class="chart-wrap" style="height:230px;">
+        <canvas id="ageChart" role="img" aria-label="Column chart of revenue by age group: 18-25 13562.46, 26-35 14757.12, 36-50 23614.99, 51-65 23931.69, 66+ 7810.55"></canvas>
+      </div>
+      <div class="insight">The 36&ndash;50 and 51&ndash;65 brackets together generate 56.8% of total revenue ($47,547).</div>
+    </div>
+
+    <div class="card">
+      <h3>Customer segmentation</h3>
+      <div class="cap">New / Returning / Loyal &middot; by previous purchases</div>
+      <div class="chart-wrap" style="height:230px;">
+        <canvas id="segmentChart" role="img" aria-label="Bar chart of revenue by customer segment: New 5790.11, Returning 49377.92, Loyal 28508.78"></canvas>
+      </div>
+      <div class="insight">Returning customers (60.2% of the base) are the largest revenue contributor and the prime target for conversion to Loyal.</div>
+    </div>
+  </div>
+
+  <div class="grid two">
+    <div class="card">
+      <h3 id="catTitle">Top products &mdash; Accessories</h3>
+      <div class="cap">Ranked by order count &middot; use the Category slicer above</div>
+      <div class="chart-wrap" style="height:190px;">
+        <canvas id="categoryChart" role="img" aria-label="Bar chart of top 3 products by order count for the selected category"></canvas>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Top 5 products by review rating</h3>
+      <div class="cap">Minimum 5 reviews</div>
+      <ul class="prod-list" id="ratingList"></ul>
+      <div class="insight">Overall average rating is 2.93/5.0 &mdash; even the top-rated products stay below 3.5, pointing to a systemic satisfaction opportunity.</div>
+    </div>
+  </div>
+
+  <footer>
+    Figures reproduced from the project README (sql/data_analysis.sql, sql/business_queries.sql). Dataset is synthetic retail transaction data, for educational and portfolio purposes.
+  </footer>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+Chart.defaults.color = '#AEB6C9';
+Chart.defaults.font.family = "Segoe UI, -apple-system, sans-serif";
+Chart.defaults.font.size = 11;
+
+var gridColor = 'rgba(255,255,255,0.06)';
+var COLORS = { blue:'#3B82D4', purple:'#7C5CD8', teal:'#22C5A6', amber:'#E8A33D', coral:'#D85A56' };
+
+function fmtUSD(v){ return '$' + Number(v).toLocaleString('en-US', {maximumFractionDigits:0}); }
+
+// ---- Donut: subscription split ----
+var donutData = [245, 255];
+var donutLabels = ['Subscriber', 'Non-subscriber'];
+var donutColors = [COLORS.blue, COLORS.purple];
+new Chart(document.getElementById('donutChart'), {
+  type: 'doughnut',
+  data: { labels: donutLabels, datasets: [{ data: donutData, backgroundColor: donutColors, borderColor: '#212B44', borderWidth: 3 }] },
+  options: {
+    responsive: true, maintainAspectRatio: false, cutout: '68%',
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(c){ return c.label + ': ' + c.parsed + ' (' + (c.parsed/500*100).toFixed(1) + '%)'; } } } }
+  }
+});
+var legendEl = document.getElementById('donutLegend');
+donutLabels.forEach(function(l, i){
+  var pct = (donutData[i]/500*100).toFixed(0);
+  legendEl.innerHTML += '<span><span class="dot" style="background:' + donutColors[i] + '"></span>' + l + ' ' + pct + '%</span>';
+});
+
+// ---- Revenue by gender ----
+new Chart(document.getElementById('genderChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Male', 'Female'],
+    datasets: [{ label: 'Revenue', data: [47238.52, 36438.29], backgroundColor: [COLORS.blue, COLORS.purple], borderRadius: 4, maxBarThickness: 46 }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(c){ return fmtUSD(c.parsed.y); } } } },
+    scales: {
+      y: { beginAtZero: true, grid: { color: gridColor }, ticks: { callback: function(v){ return fmtUSD(v); } } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ---- Shipping ----
+new Chart(document.getElementById('shippingChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Standard', 'Express'],
+    datasets: [{ label: 'Avg spend', data: [170.37, 162.17], backgroundColor: [COLORS.teal, COLORS.amber], borderRadius: 4, maxBarThickness: 46 }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(c){ return fmtUSD(c.parsed.y) + ' avg'; } } } },
+    scales: {
+      y: { beginAtZero: true, grid: { color: gridColor }, ticks: { callback: function(v){ return fmtUSD(v); } } },
+      x: { grid: { display: false } }
+    }
+  }
+});
+
+// ---- Revenue by age group ----
+new Chart(document.getElementById('ageChart'), {
+  type: 'bar',
+  data: {
+    labels: ['18-25', '26-35', '36-50', '51-65', '66+'],
+    datasets: [{ label: 'Revenue', data: [13562.46, 14757.12, 23614.99, 23931.69, 7810.55], backgroundColor: COLORS.blue, borderRadius: 4, maxBarThickness: 52 }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(c){ return fmtUSD(c.parsed.y); } } } },
+    scales: {
+      y: { beginAtZero: true, grid: { color: gridColor }, ticks: { callback: function(v){ return fmtUSD(v); } } },
+      x: { grid: { display: false }, ticks: { autoSkip: false } }
+    }
+  }
+});
+
+// ---- Segmentation ----
+new Chart(document.getElementById('segmentChart'), {
+  type: 'bar',
+  data: {
+    labels: ['New (33)', 'Returning (301)', 'Loyal (166)'],
+    datasets: [{ label: 'Revenue', data: [5790.11, 49377.92, 28508.78], backgroundColor: [COLORS.coral, COLORS.blue, COLORS.teal], borderRadius: 4, maxBarThickness: 60 }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(c){ return fmtUSD(c.parsed.y); } } } },
+    scales: {
+      y: { beginAtZero: true, grid: { color: gridColor }, ticks: { callback: function(v){ return fmtUSD(v); } } },
+      x: { grid: { display: false }, ticks: { autoSkip: false } }
+    }
+  }
+});
+
+// ---- Top products per category (slicer-driven) ----
+var categoryData = {
+  Accessories: [['Belt', 34], ['Scarf', 28], ['Backpack', 26]],
+  Clothing: [['Pants', 33], ['Skirt', 28], ['Blouse', 25]],
+  Footwear: [['Sandals', 34], ['Loafers', 33], ['Sneakers', 32]],
+  Outerwear: [['Jacket', 30], ['Sweater', 30], ['Hoodie', 29]]
+};
+var categoryChart = new Chart(document.getElementById('categoryChart'), {
+  type: 'bar',
+  data: {
+    labels: categoryData.Accessories.map(function(d){ return d[0]; }),
+    datasets: [{ label: 'Orders', data: categoryData.Accessories.map(function(d){ return d[1]; }), backgroundColor: COLORS.purple, borderRadius: 4, maxBarThickness: 40 }]
+  },
+  options: {
+    indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { beginAtZero: true, grid: { color: gridColor } },
+      y: { grid: { display: false } }
+    }
+  }
+});
+
+var catTitle = document.getElementById('catTitle');
+document.querySelectorAll('.chip[data-cat]').forEach(function(chip){
+  chip.addEventListener('click', function(){
+    document.querySelectorAll('.chip[data-cat]').forEach(function(c){ c.classList.remove('active'); });
+    chip.classList.add('active');
+    var cat = chip.getAttribute('data-cat');
+    var rows = categoryData[cat];
+    categoryChart.data.labels = rows.map(function(d){ return d[0]; });
+    categoryChart.data.datasets[0].data = rows.map(function(d){ return d[1]; });
+    categoryChart.update();
+    catTitle.textContent = 'Top products — ' + cat;
+  });
+});
+
+// ---- Top 5 products by rating (list) ----
+var ratings = [
+  ['Blouse', 'Clothing', 3.23],
+  ['Coat', 'Outerwear', 3.22],
+  ['Sandals', 'Footwear', 3.21],
+  ['Boots', 'Footwear', 3.14],
+  ['Skirt', 'Clothing', 3.03]
+];
+var ratingList = document.getElementById('ratingList');
+ratings.forEach(function(r, i){
+  var li = document.createElement('li');
+  li.innerHTML = '<span class="prod-rank">' + (i+1) + '</span><span class="prod-name">' + r[0] + ' <span style="color:var(--text-low);font-size:11px;">(' + r[1] + ')</span></span><span class="prod-val">' + r[2].toFixed(2) + '</span>';
+  ratingList.appendChild(li);
+});
+</script>
+</body>
+</html>
